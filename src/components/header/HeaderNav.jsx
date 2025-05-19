@@ -9,7 +9,7 @@ const HeaderNav = () => {
             <div className="container header__container">
                 <HeaderLogo />
                 <HeaderNavBar />
-                <HeaderBtn text="Contact Us"/>
+                <HeaderBtn text="Contact Us" link="contactus"/>
             </div>
         </header>
     );

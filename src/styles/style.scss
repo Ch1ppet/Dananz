@@ -5,6 +5,7 @@
     --default-color-text: #333;
     --white-color: #fff;
     --violet-color: #2C3878;
+    --grey-text-color: #9C9C9C;
 }
 
 body {
@@ -29,8 +30,25 @@ body {
 }
 
 .section-title {
+    position: relative;
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
     color: #000;
+    margin-bottom: 20px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 4.5em;
+        border-top: 2px solid #000000;
+        width: 20vw;
+    }
+}
+
+.under-title-text {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 170%;
 }

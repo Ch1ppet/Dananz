@@ -15,9 +15,17 @@
         gap: 74px;
         margin-left: 320px;
 
-        &-item:active {
+        &-item {
+            font-weight: 400;
+        }
+
+        &-item--active {
             font-weight: 700;
         }
     }
+}
+
+.nav-link.active {
+    font-weight: 700;
 }
 
