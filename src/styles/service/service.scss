@@ -6,4 +6,51 @@
         line-height: 160%;
         margin-top: 24px;
     }
+
+    &__accordion {
+        padding: 41px 0 0;
+        max-width: 883px;
+        background: var(--white-color);
+
+        &-item:last-child {
+            margin-bottom: 0;
+        }
+
+        &-number {
+            margin-right: 40px;
+        }
+
+        &-header {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-bottom: 35px;
+            cursor: pointer;
+        }
+    }
+
+    &__img {
+        position: relative;
+        float: right;
+        margin-top: -160px;
+        z-index: -1;
+    }
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+
+  &.open {
+    max-height: 500px;
+    padding-left: 70px;
+    padding-bottom: 35px;
+  }
+}
+
+.bold {
+    color: black;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
 }

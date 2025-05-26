@@ -1,7 +1,7 @@
 import React from "react";
 import HeaderLogo from '../../ui/logotype/header/HeaderLogo.jsx';
 import HeaderBtn from '../../ui/buttons/VioletBtn.jsx';
-import HeaderNavBar from "../../ui/navbars/header/HeaderNavBar.jsx";
+import HeaderNavBar from "../../ui/navbars/HeaderNavBar.jsx";
 
 const HeaderNav = () => {
     return (
