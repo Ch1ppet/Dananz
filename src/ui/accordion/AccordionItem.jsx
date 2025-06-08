@@ -1,8 +1,8 @@
 import React, { useState, useId } from "react";
-import ArrowRight from "../../accordion/ArrowRight.jsx";
-import ArrowDown from "../../accordion/ArrowDown.jsx";
+import ArrowRight from "./ArrowRight.jsx";
+import ArrowDown from "./ArrowDown.jsx";
 
-const AccordionItem = ({ number, text, defaultOpen = false }) => {
+const AccordionItem = ({ number, text, defaultOpen = false, children, section }) => {
 
     const id = useId();
     const contentId = `accordion-content-${id}`;
@@ -15,28 +15,28 @@ const AccordionItem = ({ number, text, defaultOpen = false }) => {
     };
 
     return (
-        <li className="service__accordion-item" >
-            <div className="service__accordion-header" 
+        <li className={`${section}__accordion-item accordion-item`} >
+            <div className={`${section}__accordion-header accordion-header`} 
             aria-expanded={isOpen} 
             onClick={toggleAccordion} 
             role="button"
             aria-controls={contentId}
             id={headerId}
             >
-                <div className="service__accordion-number bold">{number}</div>
-                <div className="service__accordion-text bold">{text}</div>
+                <div className={`${section}__accordion-number bold`}>{number}</div>
+                <div className={`${section}__accordion-text bold`}>{text}</div>
                 <span className={`accordion-icon ${isOpen ? 'open' : ''}`}>
-                    {isOpen ? <ArrowDown /> : <ArrowRight />}
+                    {isOpen ? <ArrowDown section={section}/> : <ArrowRight section={section}/>}
                 </span>
             </div>
             <div 
-            className={`accordion-content ${isOpen ? 'open' : ''}`}
+            className={`${section}__accordion-content ${isOpen ? 'open' : ''} accordion-content`}
             aria-labelledby={headerId}
             id={contentId}
             role="region"
             >
-                <div className="accordion-content-inner">
-                    the use of simple and limited elements to get the best effect or impression.
+                <div className={`${section}__accordion-content-inner`}>
+                    {children}
                 </div>
             </div>
         </li>

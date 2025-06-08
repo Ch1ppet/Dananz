@@ -1,8 +1,8 @@
 import React from "react";
 
-const ArrowDown = () => {
+const ArrowDown = ({ section }) => {
     return (
-        <span className="arrow-down"></span>
+        <span className={`${section}__arrow-down`}></span>
     );
 };
 

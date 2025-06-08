@@ -1,0 +1,54 @@
+.material {
+    margin-bottom: 120px;
+    
+    &__flex-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__under-title-text {
+        max-width: 348px;
+        margin-bottom: 10px;
+    }
+
+    &__paragraph {
+        max-width: 497px;
+        margin-bottom: 35px;
+    }
+
+    &__text-info {
+        min-width: 500px;
+    }
+
+    &__btn {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 150%;
+        border: 1px solid #3C3C3C;
+        padding: 14px 32px;
+    }
+
+    &__image-wrapper {
+        margin-top: -40px;
+        display: grid;
+        grid-template-columns: 9fr 3fr;
+        grid-template-rows: 12fr;
+        gap: 40px;
+    }
+
+    &__first-img {
+        margin-top: 50px;
+        grid-column: 1;
+        grid-row: span 2;
+        align-self: end;
+        justify-self: end;
+    }
+
+    &__second-img {
+        margin-top: -50px;
+    }
+    
+    &__third-img {
+        margin-top: 40px;
+    }
+}

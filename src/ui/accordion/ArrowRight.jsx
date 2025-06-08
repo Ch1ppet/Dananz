@@ -1,8 +1,8 @@
 import React from "react";
 
-const ArrowRight = () => {
+const ArrowRight = ({ section }) => {
     return (
-        <span className="arrow-right"></span>
+        <span className={`${section}__arrow-right`}></span>
     );
 };
 
