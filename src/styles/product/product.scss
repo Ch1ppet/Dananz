@@ -1,5 +1,6 @@
 .product {
     margin-bottom: 163px;
+
     &__top {
         display: flex;
         align-items: center;
@@ -17,8 +18,9 @@
 
     &__accordion {
         &-number {
-        margin-right: 87px;
-        font-size: 32px;
+            margin-right: 80px;
+            font-size: 32px;
+            min-width: 40px;
         }
 
         &-text {

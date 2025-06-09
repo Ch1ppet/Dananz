@@ -4,6 +4,7 @@ import About from "../modules/about/About.jsx";
 import Service from "../modules/service/Service.jsx";
 import Product from "../modules/product/Product.jsx";
 import Material from "../modules/material/Material.jsx";
+import Contact from "../modules/contact/Contact.jsx";
 
 const Main = () => {
     return (
@@ -13,6 +14,7 @@ const Main = () => {
             <Service />
             <Product />
             <Material />
+            <Contact />
         </div>
     );
 };

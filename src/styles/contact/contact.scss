@@ -1,6 +1,30 @@
 .contact {
     color: var(--white-color);
     background: #2C3878;
+    padding: 40px 0;
 
-    
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__bold-text {
+        max-width: 613px;
+    }
+
+    &__paragraph {
+        color: #D9D9D9;
+        font-size: 18px;
+        line-height: 160%;
+        max-width: 432px;
+        margin-bottom: 34px;
+    }
+
+    &__btn {
+        font-weight: 500;
+        line-height: 150%;
+        background: var(--white-color); 
+        padding: 14px 32px;
+    }
 }
