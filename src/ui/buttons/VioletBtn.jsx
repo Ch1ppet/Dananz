@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const HeaderBtn = ({ text, link }) => {
+const VioletBtn = ({ text, link }) => {
     return (
         <button className="header__btn btn">
             <Link to={link}>
@@ -11,4 +11,4 @@ const HeaderBtn = ({ text, link }) => {
     );
 };
 
-export default HeaderBtn;
+export default VioletBtn;

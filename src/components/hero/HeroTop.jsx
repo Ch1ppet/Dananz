@@ -1,5 +1,5 @@
 import React from "react";
-import HeroTitle from "../../ui/titles/HeroTitle.jsx";
+import HeroTitle from "../../ui/titles/hero/HeroTitle.jsx";
 import HeroInvertedText from "../../ui/texts/hero/HeroInvertedText.jsx";
 
 const HeroTop = () => {

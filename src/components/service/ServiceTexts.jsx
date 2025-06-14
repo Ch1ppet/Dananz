@@ -1,14 +1,14 @@
 import React from "react";
-import Title from "../../ui/titles/Title.jsx";
-import ServiceUnderTitleText from "../../ui/texts/service/SericeUnderTitleText.jsx";
-import ServiceParagraph from "../../ui/texts/service/ServiceParagraph.jsx";
+import SectionTitle from "../../ui/titles/SectionTitle.jsx";
+import UnderTitleText from "../../ui/texts/common/UnderTitleText.jsx";
+import GreyText from "../../ui/texts/common/GreyText.jsx";
 
 const ServiceTexts = () => {
     return (
         <div>
-            <Title text='SERVICE'/>
-            <ServiceUnderTitleText />
-            <ServiceParagraph />
+            <SectionTitle text='SERVICE'/>
+            <UnderTitleText section="service" children="attractive furniture with the best quality."/>
+            <GreyText section="service" children="Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations."/>
         </div>
     );
 };

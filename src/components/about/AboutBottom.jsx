@@ -1,8 +1,8 @@
 import React from "react";
 import AboutCard from '../../ui/cards/about/AboutCard.jsx';
 import VioletBtn from '../../ui/buttons/VioletBtn.jsx';
-import AboutRightBottomText from "../../ui/texts/about/AboutRightBottomText.jsx";
 import mainImg from "../../public/images/about/mainImg.jpg";
+import GreyText from "../../ui/texts/common/GreyText.jsx";
 
 const AboutBottom = () => {
     return (
@@ -12,7 +12,7 @@ const AboutBottom = () => {
                 <AboutCard />
             </div>
             <div className="about__bottom-right-wrap">
-                <AboutRightBottomText />
+                <GreyText section="about" children="Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere."/>
                 <VioletBtn text="Learn More"/> 
             </div>
         </div>

@@ -1,11 +1,11 @@
 import React from "react";
-import ContactParagraphText from "../../ui/texts/contact/MaterialParagraphText.jsx";
 import ContactBtn from "../../ui/buttons/contact/ContactBtn.jsx";
+import GreyText from "../../ui/texts/common/GreyText.jsx";
 
 const ContactRight = () => {
     return (
         <div className="contact__right">
-            <ContactParagraphText />
+            <GreyText section="contact" children="Contact us below to work together to build your amazing interior"/>
             <ContactBtn />
         </div>
     );

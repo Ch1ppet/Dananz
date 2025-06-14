@@ -14,12 +14,13 @@
         &-right-wrap {
             margin-top: 80px;
         }
-
-        &-right-text {
-            margin-bottom: 40px;
-            max-width: 223px;
-        }
     }
+
+    &__grey-text {
+        margin-bottom: 40px;
+        max-width: 223px;
+    }
+
 
     &__card {
         position: absolute;
