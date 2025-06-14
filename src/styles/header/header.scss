@@ -9,6 +9,11 @@
         justify-content: space-between;
     }
 
+    &__btn {
+        color: var(--white-color);
+        background: var(--violet-color);
+    }
+
     &__nav-list {
         display: flex;
         align-items: center;

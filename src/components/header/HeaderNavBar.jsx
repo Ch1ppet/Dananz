@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import HeaderNavbarItem from "../list-items/header/HeaderNavbarItem.jsx";
+import HeaderNavbarItem from "../../ui/list-items/header/HeaderNavbarItem.jsx"
 
 const HeaderNavBar = () => {
 

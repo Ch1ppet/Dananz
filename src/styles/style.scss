@@ -24,8 +24,6 @@ body {
 .btn {
     font-size: 14px;
     font-weight: 500;
-    color: var(--white-color);
-    background: var(--violet-color);
     padding: 14px 32px;
 }
 
@@ -48,6 +46,21 @@ body {
     }
 }
 
+.page-title {
+    pointer-events: none;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 140%;
+    margin-bottom: 36px;
+}
+
+.page-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    margin-bottom: 86px;
+}
+
 .under-title-text {
     font-weight: 600;
     font-size: 36px;
@@ -61,10 +74,10 @@ body {
 }
 
 .accordion-header {
-        position: relative;
-        display: flex;
-        align-items: center;
-        cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 .accordion-item {

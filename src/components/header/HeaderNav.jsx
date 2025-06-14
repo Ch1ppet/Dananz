@@ -1,15 +1,15 @@
 import React from "react";
-import HeaderLogo from '../../ui/logotype/header/HeaderLogo.jsx';
-import HeaderBtn from '../../ui/buttons/VioletBtn.jsx';
-import HeaderNavBar from "../../ui/navbars/HeaderNavBar.jsx";
+import Logo from '../../ui/logo/Logo.jsx';
+import HeaderNavBar from "./HeaderNavBar.jsx";
+import DefaultBtn from "../../ui/buttons/DefaultBtn.jsx";
 
 const HeaderNav = () => {
     return (
         <header className="header">
             <div className="container header__container">
-                <HeaderLogo />
+                <Logo section="header"/>
                 <HeaderNavBar />
-                <HeaderBtn text="Contact Us" link="contactus"/>
+                <DefaultBtn text="Contact Us" link="contactus" section="header"/>
             </div>
         </header>
     );
